@@ -754,8 +754,6 @@ layout: section
 <br/>
 
 ### <octicon-mark-github-16 class="h-8" /> nomadicafrican/Eventify
-<br/>
-
 ### <ph-projector-screen class="h-8" /> eventify-slides.vercel.app
 <!--
 Thank you for your attention. We welcome your questions about Eventify's approach to connecting travelers with authentic local experiences
