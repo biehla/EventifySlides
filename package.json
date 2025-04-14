@@ -10,6 +10,7 @@
   "dependencies": {
     "@iconify-json/logos": "^1.2.4",
     "@iconify-json/octicon": "^1.2.5",
+    "@iconify-json/ph": "^1.2.2",
     "@slidev/cli": "^51.4.0",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",

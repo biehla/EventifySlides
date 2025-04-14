@@ -13,7 +13,7 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +494 slides.md
+badd +759 slides.md
 badd +8 components/IFrame.vue
 badd +1 components/Counter.vue
 badd +11 .eslint.js
@@ -21,11 +21,6 @@ badd +1 outline.md
 argglobal
 %argdel
 edit slides.md
-let s:save_splitbelow = &splitbelow
-let s:save_splitright = &splitright
-set splitbelow splitright
-let &splitbelow = s:save_splitbelow
-let &splitright = s:save_splitright
 wincmd t
 let s:save_winminheight = &winminheight
 let s:save_winminwidth = &winminwidth
@@ -61,17 +56,23 @@ normal! zo
 normal! zo
 178
 normal! zo
-203
-normal! zo
 204
 normal! zo
 300
 normal! zo
 309
 normal! zo
+313
+normal! zo
+314
+normal! zo
 316
 normal! zo
+321
+normal! zo
 323
+normal! zo
+328
 normal! zo
 330
 normal! zo
@@ -93,15 +94,27 @@ normal! zo
 normal! zo
 573
 normal! zo
+575
+normal! zo
+576
+normal! zo
 578
+normal! zo
+602
 normal! zo
 604
 normal! zo
 628
 normal! zo
+633
+normal! zo
+634
+normal! zo
 636
 normal! zo
 637
+normal! zo
+643
 normal! zo
 645
 normal! zo
@@ -109,7 +122,13 @@ normal! zo
 normal! zo
 667
 normal! zo
+671
+normal! zo
+672
+normal! zo
 674
+normal! zo
+681
 normal! zo
 683
 normal! zo
@@ -125,12 +144,12 @@ normal! zo
 normal! zo
 753
 normal! zo
-let s:l = 494 - ((11 * winheight(0) + 17) / 34)
+let s:l = 759 - ((30 * winheight(0) + 17) / 35)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 494
-normal! 0
+keepjumps 759
+normal! 060|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
