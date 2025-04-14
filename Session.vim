@@ -13,7 +13,7 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +759 slides.md
+badd +757 slides.md
 badd +8 components/IFrame.vue
 badd +1 components/Counter.vue
 badd +11 .eslint.js
@@ -21,13 +21,6 @@ badd +1 outline.md
 argglobal
 %argdel
 edit slides.md
-wincmd t
-let s:save_winminheight = &winminheight
-let s:save_winminwidth = &winminwidth
-set winminheight=0
-set winheight=1
-set winminwidth=0
-set winwidth=1
 argglobal
 balt outline.md
 setlocal fdm=expr
@@ -144,12 +137,12 @@ normal! zo
 normal! zo
 753
 normal! zo
-let s:l = 759 - ((30 * winheight(0) + 17) / 35)
+let s:l = 757 - ((28 * winheight(0) + 17) / 34)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 759
-normal! 060|
+keepjumps 757
+normal! 0105|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
@@ -157,8 +150,6 @@ endif
 unlet! s:wipebuf
 set winheight=1 winwidth=20
 let &shortmess = s:shortmess_save
-let &winminheight = s:save_winminheight
-let &winminwidth = s:save_winminwidth
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
