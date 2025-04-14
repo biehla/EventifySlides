@@ -1,0 +1,25 @@
+{
+  "name": "vcpres",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@iconify-json/logos": "^1.2.4",
+    "@iconify-json/octicon": "^1.2.5",
+    "@slidev/cli": "^51.4.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-vue": "^10.0.0",
+    "prettier": "^3.5.3",
+    "slidev-theme-academic-schober": "^1.2.24",
+    "slidev-theme-neversink": "^0.3.6",
+    "vite": "^6.2.3",
+    "vue": "^3.5.13"
+  }
+}
